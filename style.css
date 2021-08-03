@@ -26,6 +26,8 @@ a {
     color: rgba(0,0,0,0);
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    text-decoration: none;
+
     padding: 2vh;
     line-height: 12vh;
 
