@@ -6,10 +6,12 @@
     box-sizing: border-box;
 }
 
-.name {
-    font: 350 5vw 'Jost', sans-serif;
-    text-align: left;
-    line-height: 110%;
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -17,39 +19,37 @@
     padding: 1%;
 }
 
+.name {
+    font: 350 10vh 'Jost', sans-serif;
+    text-align: left;
+    color: white;
+    color: rgba(0,0,0,0);
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 2vh;
+    line-height: 12vh;
+
+    background: #02AAB0;
+    background: -webkit-linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    background: -moz-linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    background: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    background-size: 200% 100%;
+    background-position: left center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: background-position 0.5s;
+}
+
 .first {
-    padding-bottom: 6%;
-    letter-spacing: 0.25vw;
+    letter-spacing: 0.45vh;
+    /* border: solid black; */
 }
 
 .last {
-    letter-spacing: 1.15vw;
+    letter-spacing: 2.3vh;
+    /* border: solid black; */
 }
 
-a {
-    position: relative;
-    display: inline-block;
-    color: royalblue;
-    overflow: hidden;
-    background: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: left center;
-    transition: background-position 0.5s;
-    text-decoration: none;
-}
-
-a:hover {
+.name:hover {
     background-position: right center;
 }
-
-/* div.name:hover{
-    background: #820079;
-    background: -webkit-linear-gradient(to right, #820079 19%, #FF00A2 100%);
-    background: -moz-linear-gradient(to right, #820079 19%, #FF00A2 100%);
-    background: linear-gradient(to right, #820079 19%, #FF00A2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
